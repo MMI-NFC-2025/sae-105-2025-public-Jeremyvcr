@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page introuvable | Echos Sonore</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/404.css">
+</head>
+<body>
+
+    <!-- Header fixe -->
+    <header class="header-fixed">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M20 5C15 5 10 8 10 15C10 22 15 25 20 30C25 25 30 22 30 15C30 8 25 5 20 5Z" fill="#FBC02D"/>
+                    <ellipse cx="20" cy="17" rx="6" ry="8" fill="#F9A825"/>
+                </svg>
+                <span class="logo-text">Echos Sonore</span>
+            </a>
+            <button class="burger-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <nav class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="festival.html">Le Festival</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="artiste.html">Artistes</a></li>
+                <li><a href="scenes.html">Scènes</a></li>
+                <li><a href="infos.html">Infos Pratiques</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="error-404">
+        <div class="error-container">
+            
+            <!-- Icon 404 -->
+            <div class="error-icon">
+                <div class="icon-circle">
+                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                        <path d="M60 15C45 15 30 24 30 45C30 66 45 75 60 90C75 75 90 66 90 45C90 24 75 15 60 15Z" fill="white" stroke="white" stroke-width="3"/>
+                        <ellipse cx="60" cy="51" rx="18" ry="24" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Texte 404 -->
+            <h1 class="error-code">404</h1>
+            <h2 class="error-title">Page introuvable</h2>
+            <p class="error-description">Oups ! Cette page semble s'être perdue dans la nature. Elle a peut-être rejoint les vibrations du festival...</p>
+
+            <!-- Boutons d'action -->
+            <div class="error-actions">
+                <a href="index.html" class="btn-404 btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M3 10L10 3L17 10M4 9V17H7V13H13V17H16V9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Retour à l'accueil
+                </a>
+
+                <a href="programme.html" class="btn-404 btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <rect x="3" y="4" width="14" height="13" rx="2" stroke="#2E5C1F" stroke-width="2"/>
+                        <path d="M6 2V6M14 2V6M3 8H17" stroke="#2E5C1F" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Voir le programme
+                </a>
+
+                <a href="artiste.html" class="btn-404 btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="6" r="3" stroke="#2E5C1F" stroke-width="2"/>
+                        <path d="M4 18C4 14 6 12 10 12C14 12 16 14 16 18" stroke="#2E5C1F" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Découvrir les artistes
+                </a>
+            </div>
+
+            <!-- Message final -->
+            <div class="error-footer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3C9 3 6 4.5 6 9C6 13.5 12 21 12 21C12 21 18 13.5 18 9C18 4.5 15 3 12 3Z" fill="#FBC02D"/>
+                    <ellipse cx="12" cy="10.5" rx="4.5" ry="6" fill="#F9A825"/>
+                </svg>
+                <p>Continuez à vibrer avec nous !</p>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
