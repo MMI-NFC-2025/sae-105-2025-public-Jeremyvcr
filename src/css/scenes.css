@@ -1,0 +1,218 @@
+/* === SCENES HERO === */
+.scenes-hero {
+    min-height: 25vh;
+    background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8rem 2rem 3rem;
+}
+
+.scenes-hero-content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.scenes-hero-content p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.95);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* === SCENES SECTION === */
+.scenes-section {
+    padding: 3rem 0 5rem;
+    background: #F5F5F5;
+}
+
+.container-scenes {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Introduction */
+.scenes-intro {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.scenes-intro p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+/* === LISTE SCENES === */
+.scenes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Carte scène */
+.scene-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.scene-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.scene-image {
+    position: relative;
+    width: 100%;
+    padding-top: 60%;
+    overflow: hidden;
+    background: #333;
+}
+
+.scene-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.scene-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+}
+
+.scene-overlay h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 0.3rem 0;
+}
+
+.scene-overlay p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+}
+
+/* Info scène */
+.scene-info {
+    padding: 1.2rem 1.5rem;
+}
+
+.scene-description {
+    font-size: 0.95rem;
+    color: #333;
+    margin: 0 0 1rem 0;
+    line-height: 1.5;
+}
+
+.scene-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.scene-capacity,
+.scene-artistes {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.scene-capacity svg,
+.scene-artistes svg {
+    flex-shrink: 0;
+}
+
+.scene-capacity span {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.scene-artistes span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #FF6B35;
+}
+
+/* === PLAN DU SITE === */
+.plan-site {
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.plan-site h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+}
+
+.plan-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.plan-content svg {
+    margin-bottom: 0.5rem;
+}
+
+.plan-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.plan-subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .scenes-hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .container-scenes {
+        padding: 0 1rem;
+    }
+    
+    .scene-overlay h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .scene-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

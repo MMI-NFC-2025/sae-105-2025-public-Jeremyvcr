@@ -1,0 +1,206 @@
+/* === FESTIVAL HERO === */
+.festival-hero {
+    min-height: 40vh;
+    background: linear-gradient(180deg, #FF6B35 0%, #FBC02D 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8rem 2rem 4rem;
+}
+
+.festival-hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.festival-hero-content p {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 300;
+    opacity: 0.95;
+}
+
+/* === HISTORIQUE SECTION === */
+.historique-section {
+    padding: 5rem 0;
+    background: #fff;
+}
+
+.section-icon {
+    margin-bottom: 1rem;
+}
+
+.section-title-left {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.historique-content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.edition-box {
+    background: #FFF3E0;
+    border-left: 4px solid #FF6B35;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+.edition-box h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #FF6B35;
+    margin-bottom: 0.8rem;
+}
+
+.edition-box p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* === ÉQUIPE SECTION === */
+.equipe-section {
+    padding: 5rem 0;
+    background: #F9F9F9;
+}
+
+.equipe-intro {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 3rem;
+    line-height: 1.7;
+}
+
+.equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.equipe-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.equipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.equipe-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.8rem;
+}
+
+.equipe-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* === VALEURS SECTION === */
+.valeurs-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #2E5C1F 0%, #3D7024 100%);
+    color: #fff;
+}
+
+.valeurs-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    color: #fff;
+}
+
+.valeurs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.valeur-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.valeur-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.valeur-icon {
+    font-size: 2rem;
+    color: #FBC02D;
+    margin-bottom: 1rem;
+}
+
+.valeur-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.valeur-card p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.valeurs-quote {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.valeurs-quote p {
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.8;
+    color: #fff;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .festival-hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .festival-hero-content p {
+        font-size: 1.1rem;
+    }
+    
+    .equipe-grid,
+    .valeurs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title-left {
+        font-size: 1.8rem;
+    }
+}

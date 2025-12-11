@@ -77,6 +77,13 @@ p {
     background: linear-gradient(135deg, #2E5C1F 0%, #3D7024 100%);
     padding: 1rem 2rem;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Header au scroll - fond plus sombre */
+.header-fixed.scrolled {
+    background: rgba(30, 30, 30, 0.98);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .header-content {
@@ -219,7 +226,8 @@ p {
 .hero {
     position: relative;
     min-height: 100vh;
-    background: url('../../assets/images/Hero_Festival.avif') center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('/assets/image/Hero_Festival.avif') center/cover no-repeat;
     display: flex;
     align-items: flex-end;
     padding: 0 0 4rem 3rem;
