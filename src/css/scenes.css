@@ -216,3 +216,8 @@
         align-items: flex-start;
     }
 }
+.scene-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
