@@ -3,132 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Echos Sonore - Festival de musique en pleine nature</title>
-    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Echos Sonore - Festival</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
 
     <!-- Header fixe -->
-    <header>
-        <a href="/">
-            <img src="/assets/icons/logo.svg" alt="Logo Echos Sonore">
+    <!-- Header fixe -->
+<header class="header-fixed">
+    <div class="header-content">
+        <a href="/" class="logo">
+            <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path d="M20 5C15 5 10 8 10 15C10 22 15 25 20 30C25 25 30 22 30 15C30 8 25 5 20 5Z" fill="#FBC02D"/>
+                <ellipse cx="20" cy="17" rx="6" ry="8" fill="#F9A825"/>
+            </svg>
+            <span class="logo-text">Echos Sonore</span>
         </a>
-        <button class="burger-menu">
+        <button class="burger-menu" aria-label="Menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
-        <nav>
-            <ul>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="#programme">Programme</a></li>
-                <li><a href="#artistes">Artistes</a></li>
-                <li><a href="#infos">Infos Pratiques</a></li>
-                <li><a href="#billetterie">Billetterie</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://instagram.com">Instagram</a></li>
-                <li><a href="https://facebook.com">Facebook</a></li>
-                <li><a href="https://twitter.com">Twitter</a></li>
-            </ul>
-            <img src="/assets/img/Hero_Festival.avif" alt="Image du festival">
-        </nav>
-    </header>
+    </div>
+    
+    <nav class="nav-menu">
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#festival">Le Festival</a></li>
+            <li><a href="#programme">Programme</a></li>
+            <li><a href="#artistes">Artistes</a></li>
+            <li><a href="#scenes">Scènes</a></li>
+            <li><a href="#infos">Infos Pratiques</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
 
     <main>
         <!-- Hero Section -->
-        <div class="hero">
+        <section class="hero">
+            <div class="hero-overlay"></div>
             <div class="hero-content">
-                <p class="hero-subtitle">23 au 26 oct <br><span>Audincoust</span></p>
-                <h1>Echos Sonore<br><span>Vibrez au rythme de la nature</span></h1>
-                <a href="#billetterie" class="btn-primary">Réserver mes billets</a>
+                <p class="hero-date">23 au 26 oct<br><span>Audincourt</span></p>
+                <h1 class="hero-title">Echos<br>Sonore</h1>
+                <p class="hero-subtitle">Vibrez au rythme de la nature</p>
+                <a href="#billetterie" class="btn-hero">Réserver mes billets</a>
             </div>
-        </div>
+        </section>
 
         <!-- Dates du festival -->
-        <section class="festival-dates">
-            <header>
-                <p>Dates du festival</p>
-                <h2>4 jours de musique en plein air</h2>
-            </header>
-            <div class="date-selector">
-                <button class="date-btn active" data-day="jeudi">
-                    <span class="date-number">29</span>
-                    <span class="date-day">Jeudi - Ouverture</span>
-                    <span class="date-info">Soirée d'inauguration, ambiance festive et...</span>
-                </button>
-                <button class="date-btn" data-day="vendredi-samedi">
-                    <span class="date-number">30</span>
-                    <span class="date-day">Ven-Sam - Programme complet</span>
-                    <span class="date-info">Journées complètes avec tous les artistes</span>
-                </button>
-                <button class="date-btn" data-day="dimanche">
-                    <span class="date-number">31</span>
-                    <span class="date-day">Dimanche - Finale</span>
-                    <span class="date-info">Grande clôture - Set unique</span>
-                </button>
+        <section class="dates-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Dates du festival</h2>
+                    <p class="section-subtitle">4 jours de musique en plein air</p>
+                </header>
+                
+                <div class="dates-grid">
+                    <div class="date-card orange">
+                        <div class="date-number">29</div>
+                        <h3 class="date-title">Jeudi - Ouverture</h3>
+                        <p class="date-description">Soirée d'inauguration, ambiance festive et...</p>
+                    </div>
+                    
+                    <div class="date-card green">
+                        <div class="date-number">30</div>
+                        <h3 class="date-title">Ven-Sam - Programme complet</h3>
+                        <p class="date-description">Journées complètes avec tous les artistes</p>
+                    </div>
+                    
+                    <div class="date-card yellow">
+                        <div class="date-number">31</div>
+                        <h3 class="date-title">Dimanche - Finale</h3>
+                        <p class="date-description">Grande clôture - Set unique</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Section Explorer -->
-        <section class="explorer">
-            <h2>Explorer</h2>
-            <div class="explorer-grid">
-                <a href="#programme" class="explorer-card">
-                    <img src="/assets/img/programme-icon.svg" alt="">
-                    <h3>Programme</h3>
-                    <p>4 jours - 30+ artistes</p>
-                </a>
-                <a href="#artistes" class="explorer-card">
-                    <img src="/assets/img/artistes-icon.svg" alt="">
-                    <h3>Artistes</h3>
-                    <p>Rock, pop, électro, indie</p>
-                </a>
-                <a href="#scenes" class="explorer-card">
-                    <img src="/assets/img/scenes-icon.svg" alt="">
-                    <h3>Scènes</h3>
-                    <p>3 scènes musicales uniques</p>
-                </a>
-                <a href="#infos" class="explorer-card">
-                    <img src="/assets/img/infos-icon.svg" alt="">
-                    <h3>Infos Pratiques</h3>
-                    <p>Plan, accès, services</p>
-                </a>
+        <section class="explorer-section">
+            <div class="container">
+                <h2 class="explorer-title">Explorer</h2>
+                
+                <div class="explorer-grid">
+                    <a href="#programme" class="explorer-card orange">
+                        <div class="explorer-icon">
+                            <div class="icon-circle">📅</div>
+                        </div>
+                        <h3>Programme</h3>
+                        <p>4 jours - 30+ artistes</p>
+                    </a>
+                    
+                    <a href="#artistes" class="explorer-card green">
+                        <div class="explorer-icon">
+                            <div class="icon-circle">🎤</div>
+                        </div>
+                        <h3>Artistes</h3>
+                        <p>Rock, pop, électro, indie</p>
+                    </a>
+                    
+                    <a href="#scenes" class="explorer-card yellow">
+                        <div class="explorer-icon">
+                            <div class="icon-circle">🎸</div>
+                        </div>
+                        <h3>Scènes</h3>
+                        <p>3 scènes musicales uniques</p>
+                    </a>
+                    
+                    <a href="#infos" class="explorer-card black">
+                        <div class="explorer-icon">
+                            <div class="icon-circle">ℹ️</div>
+                        </div>
+                        <h3>Infos Pratiques</h3>
+                        <p>Plan, accès, services</p>
+                    </a>
+                </div>
             </div>
         </section>
 
         <!-- Section Éco-responsable -->
         <section class="eco-section">
-            <p>Festival éco-responsable</p>
-            <h2>Zéro déchet, énergies renouvelables, transports doux, initiatives locales, sensibilisation aux enjeux environnementaux</h2>
-            <a href="#engagement" class="btn-secondary">En savoir +</a>
+            <div class="container">
+                <div class="eco-content">
+                    <p class="eco-label">Festival éco-responsable</p>
+                    <h2 class="eco-title">Zéro déchet, énergies renouvelables,<br>transports doux, initiatives locales,<br>sensibilisation aux enjeux environnementaux</h2>
+                    <a href="#engagement" class="btn-eco">En savoir +</a>
+                </div>
+            </div>
         </section>
 
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>Vibrez au rythme de la nature <br><span>Echos Sonore 2025</span></p>
-        <nav>
-            <ul>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="#programme">Programme</a></li>
-                <li><a href="#artistes">Artistes</a></li>
-                <li><a href="#infos">Infos</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://instagram.com">Instagram</a></li>
-                <li><a href="https://facebook.com">Facebook</a></li>
-                <li><a href="https://twitter.com">Twitter</a></li>
-            </ul>
-        </nav>
-        <address>
-            <p><a href="tel:+33123456789">01 23 45 67 89</a></p>
-            <p><a href="mailto:contact@echossonore.fr">contact@echossonore.fr</a></p>
-            <p>Audincoust, France<br>23-26 Octobre 2025</p>
-        </address>
-    </footer>
-
-    <script src="/src/js/script.js"></script>
+    <script src="src/js/script.js"></script>
 </body>
 </html>
