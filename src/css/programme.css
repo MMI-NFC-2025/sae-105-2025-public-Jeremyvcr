@@ -788,22 +788,4 @@
     display: none !important;
 }
 
-/* === RESPONSIVE === */
-@media (max-width: 768px) {
-    .programme-hero-content h1 {
-        font-size: 2.5rem;
-    }
-    
-    .container-programme {
-        padding: 0 1rem;
-    }
-    
-    .concert-time {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .concert-info h3 {
-        font-size: 1.1rem;
-    }
-}
+

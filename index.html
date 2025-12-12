@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Echos Sonore - Festival</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/style.css">
+<link rel="stylesheet" href="src/css/carrousel.css">
+
 </head>
 <body>
 
-    <!-- Header fixe -->
+    
     <header class="header-fixed">
         <div class="header-content">
             <a href="index.html" class="logo">
@@ -36,7 +39,7 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
+        
         <div class="hero">
             <div class="hero-overlay"></div>
             <div class="hero-content">
@@ -45,7 +48,89 @@
                 <p class="hero-subtitle">Vibrez au rythme de la nature</p>
                 <a href="#billetterie" class="btn-hero">Réserver mes billets</a>
             </div>
+            
         </div>
+            
+    <section class="carrousel-section">
+        <div class="container">
+            <h2 class="carrousel-title">Revivez les éditions précédentes</h2>
+            
+            <div class="carrousel">
+                <button class="carrousel-btn prev" aria-label="Image précédente">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <div class="carrousel-container">
+                    <div class="carrousel-track">
+                        
+                        <!-- Slide 1 -->
+                        <div class="carrousel-slide">
+                            <img src="assets/image/grandescene1.avif" alt="Festival Echos Sonore - Foule en liesse">
+                            <div class="carrousel-caption">
+                                <h3>Édition 2025</h3>
+                                <p>15 000 festivaliers</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="carrousel-slide">
+                            <img src="assets/image/grandescene1.avif" alt="Concert sur la Grande Scène">
+                            <div class="carrousel-caption">
+                                <h3>Grande Scène</h3>
+                                <p>Des têtes d'affiche internationales</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="carrousel-slide">
+                            <img src="assets/image/ambiancereggae1 (1).avif" alt="Ambiance nocturne">
+                            <div class="carrousel-caption">
+                                <h3>Ambiance magique</h3>
+                                <p>Des nuits inoubliables</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="carrousel-slide">
+                            <img src="assets/image/ambizncereggaton1 (1).avif" alt="Public en délire">
+                            <div class="carrousel-caption">
+                                <h3>Vibrez ensemble</h3>
+                                <p>Une expérience unique</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div class="carrousel-slide">
+                            <img src="assets/image/brigadevertefestival1.avif" alt="Festival éco-responsable">
+                            <div class="carrousel-caption">
+                                <h3>Éco-responsable</h3>
+                                <p>En harmonie avec la nature</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="carrousel-btn next" aria-label="Image suivante">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+               
+                <div class="carrousel-indicators">
+                    <button class="indicator active" data-slide="0"></button>
+                    <button class="indicator" data-slide="1"></button>
+                    <button class="indicator" data-slide="2"></button>
+                    <button class="indicator" data-slide="3"></button>
+                    <button class="indicator" data-slide="4"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
         <!-- Dates du festival -->
         <section class="dates-section">
@@ -117,7 +202,7 @@
 </div>
 
 
-        <!-- Section Éco-responsable -->
+               <!-- Section Éco-responsable -->
         <section class="eco-section">
             <div class="container">
                 <div class="eco-content">
@@ -131,6 +216,6 @@
     </main>
 
     <script src="src/js/script.js"></script>
+    <script src="src/js/carrousel.js"></script>
 </body>
 </html>
-

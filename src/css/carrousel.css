@@ -1,0 +1,200 @@
+/* === CARROUSEL SECTION - VERSION MOBILE === */
+.carrousel-section {
+    padding: 2rem 0;
+    background: #f9f9f9;
+}
+
+.carrousel-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+/* === CARROUSEL === */
+.carrousel {
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: none;
+}
+
+.carrousel-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.carrousel-track {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    width: 100%;
+}
+
+.carrousel-slide {
+    min-width: 100%;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.carrousel-slide img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Caption */
+.carrousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 1rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+    color: #fff;
+}
+
+.carrousel-caption h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 0.3rem 0;
+}
+
+.carrousel-caption p {
+    font-size: 0.95rem;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Boutons Prev/Next */
+.carrousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carrousel-btn:active {
+    background: rgba(255, 107, 53, 0.9);
+    transform: translateY(-50%) scale(0.95);
+}
+
+.carrousel-btn.prev {
+    left: 0.5rem;
+}
+
+.carrousel-btn.next {
+    right: 0.5rem;
+}
+
+.carrousel-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Indicateurs (dots) */
+.carrousel-indicators {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.6rem;
+    z-index: 10;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.indicator.active {
+    background: #FF6B35;
+    width: 24px;
+    border-radius: 5px;
+}
+
+/* === ADAPTATION POUR PETITS ÉCRANS === */
+@media (max-width: 360px) {
+    .carrousel-slide img {
+        height: 220px;
+    }
+    
+    .carrousel-caption {
+        padding: 1rem 0.8rem;
+    }
+    
+    .carrousel-caption h3 {
+        font-size: 1.1rem;
+    }
+    
+    .carrousel-caption p {
+        font-size: 0.85rem;
+    }
+    
+    .carrousel-btn {
+        width: 38px;
+        height: 38px;
+    }
+    
+    .carrousel-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .indicator {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .indicator.active {
+        width: 20px;
+    }
+}
+
+/* === ÉCRANS MOYENS (facultatif pour tablettes) === */
+@media (min-width: 600px) {
+    .carrousel {
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 15px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .carrousel-container {
+        border-radius: 15px;
+    }
+    
+    .carrousel-slide img {
+        height: 400px;
+    }
+    
+    .carrousel-caption h3 {
+        font-size: 1.6rem;
+    }
+    
+    .carrousel-caption p {
+        font-size: 1rem;
+    }
+}

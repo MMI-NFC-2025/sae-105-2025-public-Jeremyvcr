@@ -292,19 +292,3 @@
     box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
 }
 
-/* === RESPONSIVE === */
-@media (max-width: 768px) {
-    .infos-hero-content h1 {
-        font-size: 2.5rem;
-    }
-    
-    .container-infos {
-        padding: 0 1rem;
-    }
-    
-    .tarif-item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-}
