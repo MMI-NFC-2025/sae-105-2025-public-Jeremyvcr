@@ -6,7 +6,7 @@
 - NOM : VICAIRE
 - PRÉNOM : Jeremy
 - GROUPE : A2
-- URL du site : 
+- URL du site : https://693c31bf3b91412439a3203f--sitefestival.netlify.app/
 - URL FIGMA :https://www.figma.com/design/ZjIsjNzNqTOeFmFpl5J3PC/Maquette-Festival?node-id=0-1&t=uFBDLFAGhrwERGhs-1
 
 ## Sujet
